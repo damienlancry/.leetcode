@@ -19,33 +19,6 @@ class Solution:
             row += drow
             col += dcol
         return matrix
-        # for col in range(left, right):
-        #     matrix[row][col] = step
-        #     step += 1
-        # if step == n * n + 1:
-        #     return matrix
-
-        # for row in range(up + 1, dn):
-        #     matrix[row][col] = step
-        #     step += 1
-        # if step == n * n + 1:
-        #     return matrix
-
-        # for col in range(right - 2, left - 1, -1):
-        #     matrix[row][col] = step
-        #     step += 1
-        # if step == n * n + 1:
-        #     return matrix
-
-        # for row in range(dn - 2, up, -1):
-        #     matrix[row][col] = step
-        #     step += 1
-        # if step == n * n + 1:
-        #     return matrix
-        # up += 1
-        # dn -= 1
-        # left += 1
-        # right -= 1
 
 
 Solution().generateMatrix(3)

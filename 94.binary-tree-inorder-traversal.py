@@ -13,10 +13,24 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 # @lc code=start
 # Definition for a binary tree node.
 
+
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
+        ans = []
+
+        def dfs(root):
+            if not root:
+                return
+            dfs(root.left)
+            ans.append(root.val)
+            dfs(root.right)
+
+        dfs(root)
+        return ans
+
 
 # @lc code=end
